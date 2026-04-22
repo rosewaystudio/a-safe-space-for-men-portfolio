@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     id: 2,
     name: "Douglas A. Monds",
     title: "Legal & Compliance",
-    image: "",
+    image: "/images/team/douglas-monds.jpeg",
     bio: "Douglas A. Monds graduated from Morehouse College and the University of Michigan Law School. As Compliance Officer for A Safe Space for Men, Douglas is responsible for ensuring organizational adherence to relevant laws, regulations, policies and standards.\n\nDouglas began his career at Miller, Canfield, Paddock and Stone and served as a Hearing Officer for Detroit's Department of Appeals and Hearings. Now in private practice, he assists small businesses and represents indigent defendants through Wayne County's Indigent Defense Program. Douglas is also a golfer, artist, musician, and entrepreneur."
   },
   {
