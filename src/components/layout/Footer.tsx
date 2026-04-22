@@ -38,16 +38,6 @@ const Footer = () => {
               </a>
               <span className="hidden md:inline text-red-300">|</span>
               <a 
-                href="https://safety-zone.org" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:underline font-semibold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-700 rounded px-2 py-1"
-              >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                SafetyZone Urgent Care
-              </a>
-              <span className="hidden md:inline text-red-300">|</span>
-              <a 
                 href="tel:911" 
                 className="flex items-center hover:underline font-semibold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-700 rounded px-2 py-1"
               >
@@ -129,17 +119,6 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://safety-zone.org" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-white transition-colors inline-flex items-center"
-                >
-                  SafetyZone Urgent Care
-                  <ExternalLink className="w-3 h-3 ml-1" />
-                </a>
-              </li>
-              <li>
-                <a 
                   href="https://www.henryford.com/services/behavioral-health" 
                   target="_blank" 
                   rel="noopener noreferrer" 
@@ -157,11 +136,11 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Contact</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start">
-                <MapPin className="w-4 h-4 mr-2 mt-1 flex-shrink-0" />
+                <MapPin className="w-4 h-4 mr-2 mt-1 shrink-0" />
                 <span>Detroit, Michigan</span>
               </li>
               <li className="flex items-start">
-                <Mail className="w-4 h-4 mr-2 mt-1 flex-shrink-0" />
+                <Mail className="w-4 h-4 mr-2 mt-1 shrink-0" />
                 <a 
                   href="mailto:william@asafespaceformen.org"
                   className="hover:text-white transition-colors"
