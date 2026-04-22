@@ -12,7 +12,7 @@
 
     /* Modules - KEY CHANGES HERE */
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -33,6 +33,7 @@
     "forceConsistentCasingInFileNames": true,
 
     /* Type Checking */
+    "ignoreDeprecations": "6.0",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -43,6 +44,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": false,
     "noImplicitOverride": true,
+    
 
     /* Completeness */
     "skipLibCheck": true,
