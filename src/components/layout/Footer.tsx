@@ -172,9 +172,9 @@ const Footer = () => {
             </ul>
 
             {/* Social Media - Optional, add if you have accounts */}
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h5 className="font-bold text-sm mb-3">Follow Us</h5>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4"> */}
                 {/* Uncomment and add links when social media accounts are active
                 <a 
                   href="https://facebook.com/your-page" 
@@ -216,44 +216,51 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {currentYear} A Safe Space For Men. All rights reserved.
-            </div>
-            <div className="mt-1">
-              Website powered by{' '}
-              <a 
-                href="mailto:andrea@andreafrazier.dev"
-                className="hover:text-white transition-colors underline"
-              >
-                andreafrazier.dev
-              </a>
-            </div>
             <div className="flex flex-wrap justify-center gap-4 text-gray-400 text-sm">
               <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <span className="text-gray-600">|</span>
+                <span className="text-gray-600">|</span>
               <Link href="/terms" className="hover:text-white transition-colors">
                 Terms of Service
               </Link>
-              <span className="text-gray-600">|</span>
+                <span className="text-gray-600">|</span>
+              <Link href="/nondiscrimination" className="hover:text-white transition-colors">
+                Nondiscrimination Policy
+              </Link>
+                <span className="text-gray-600">|</span>
+                <a 
+                  href="https://www.guidestar.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Nonprofit Profile
+                </a>
+            </div>
+            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+              &copy; {currentYear} A Safe Space For Men. All rights reserved.
+            </div>
+            <div className="text-gray-500 text-sm">
+              Website powered by{' '}
               <a 
-                href="https://www.guidestar.org" 
-                target="_blank" 
+                href="https://rosewaystudio.com"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
+                className="underline transition-colors"
+                style={{ color: '#2BB3C0' }}
               >
-                Nonprofit Profile
+                rosewaystudio.com
               </a>
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </footer>
   );
 };
