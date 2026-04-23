@@ -94,7 +94,7 @@ export default function AboutPageClient() {
                   src="/images/BMIL_quote.JPG" 
                   alt="William's quote about the importance of mental health support for men"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
