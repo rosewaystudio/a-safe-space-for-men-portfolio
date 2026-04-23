@@ -91,7 +91,7 @@ export default function AboutPageClient() {
             <div className="relative">
               <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
                 <Image 
-                  src="/images/BMIL_quote.JPG" 
+                  src="/images/BMIL_quote.jpg" 
                   alt="William's quote about the importance of mental health support for men"
                   fill
                   className="object-contain bg-gray-900"
