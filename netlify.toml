@@ -6,6 +6,25 @@
   NEXT_TELEMETRY_DISABLED = "1"
   NODE_VERSION = "22"
 
+# Canonical redirects
+[[redirects]]
+  from = "https://www.asafespaceformen.org/*"
+  to = "https://asafespaceformen.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://asafespaceformen.org/*"
+  to = "https://asafespaceformen.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.asafespaceformen.org/*"
+  to = "https://asafespaceformen.org/:splat"
+  status = 301
+  force = true
+
 # Security headers
 [[headers]]
   for = "/*"
