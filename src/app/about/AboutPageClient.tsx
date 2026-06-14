@@ -91,14 +91,13 @@ export default function AboutPageClient() {
             <div className="relative">
               <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
                 <Image 
-                  src="/images/BMIL_quote.JPG" 
-                  alt="Handshake wordcloud representing cooperation, support, and community connection"
+                  src="/images/BMIL_quote.jpg" 
+                  alt="William's quote about the importance of mental health support for men"
                   fill
-                  className="object-contain bg-white p-4"
+                  className="object-contain bg-gray-900"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-600/10 to-transparent rounded-lg pointer-events-none"></div>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@
 
     /* Modules - KEY CHANGES HERE */
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -33,7 +33,6 @@
     "forceConsistentCasingInFileNames": true,
 
     /* Type Checking */
-    "ignoreDeprecations": "6.0",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,

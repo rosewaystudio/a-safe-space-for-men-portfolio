@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://asafespaceformen.org', // Update with your actual domain
+    url: 'https://asafespaceformen.org', 
     siteName: 'A Safe Space For Men',
     title: 'A Safe Space For Men',
     description: 'Creating community for men\'s mental health in Detroit and beyond. Breaking barriers, building community, and fostering resilience.',

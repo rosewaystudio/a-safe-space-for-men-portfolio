@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/images/handshake_banner.jpeg',
-        width: 1200,
+        width: 1260,
         height: 630,
         alt: 'Join A Safe Space For Men - Community support and mental health advocacy',
       },

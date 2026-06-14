@@ -113,16 +113,43 @@ const HomePage = () => {
   const upcomingEvents = getUpcomingEventsForHome();
 
   const partners = [
-    { name: "SafetyZone Behavioral Health", description: "Urgent Care Partner" },
-    { name: "Henry Ford Health", description: "Healthcare Partner" },
-    { name: "DWHIN", description: "Network Partner" },
-    { name: "Meijer", description: "Community Partner" }
+    {
+      name: "African American Male Wellness Agency",
+      description: "Health & Wellness Partner",
+      href: "https://aawellness.org/",
+      logo: null
+    },
+    {
+      name: "Building Better Men",
+      description: "Youth Mentorship Partner",
+      href: "https://buildingbettermen.org",
+      logo: null
+    },
+    {
+      name: "Detroit Wayne Integrated Health Network",
+      description: "Network Partner",
+      href: "https://dwihn.org/",
+      logo: null
+    },
+    {
+      name: "Henry Ford Health",
+      description: "Healthcare Partner",
+      href: "https://www.henryford.com/services/behavioral-health",
+      logo: null
+    },    
+    {
+      name: "Meijer",
+      description: "Community Partner",
+      href: "https://www.meijer.com/",
+      logo: null
+    },
+    
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Updated Messaging */}
-      <section className="pt-16 bg-gradient-to-br from-emerald-50 via-blue-50 to-teal-50 py-20 md:py-28">
+      <section className="pt-16 bg-linear-to-br from-emerald-50 via-blue-50 to-teal-50 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -206,7 +233,7 @@ const HomePage = () => {
       </section>
 
       {/* You're Not Alone Statistics */}
-      <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className="py-16 bg-linear-to-br from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -258,7 +285,7 @@ const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {struggles.map((struggle, index) => (
               <div key={index} className="flex items-start space-x-4 bg-emerald-50 rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex-shrink-0 mt-1">
+                <div className="shrink-0 mt-1">
                   {struggle.icon}
                 </div>
                 <div>
@@ -351,22 +378,51 @@ const HomePage = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Partners</h2>
-            <p className="text-lg text-gray-600">Working together to support men's mental health in Detroit</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Partners
+            </h2>
+            <p className="text-lg text-gray-600">
+              Working together to support men's mental health in Detroit
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {partners.map((partner, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow text-center">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{partner.name}</h3>
-                <p className="text-sm text-emerald-600 font-medium">{partner.description}</p>
-              </div>
+            <a 
+              key={index}
+              href={partner.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 text-center group flex flex-col items-center justify-center min-h-[140px]"
+            >
+              {partner.logo ? (
+                <Image
+                  src={partner.logo}
+                  alt={`${partner.name} logo`}
+                  width={120}
+                  height={60}
+                  className="object-contain mb-3"
+                />
+                ) : (
+                  <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-3 group-hover:bg-emerald-200 transition-colors">
+                    <span className="text-emerald-700 font-bold text-xl">
+                      {partner.name.charAt(0)}
+                    </span>
+                  </div>
+                )}
+                <h3 className="text-sm font-bold text-gray-900 mb-1 leading-tight">
+                  {partner.name}
+                </h3>
+                <p className="text-xs text-emerald-600 font-medium">
+                  {partner.description}
+                </p>
+              </a>
             ))}
           </div>
         </div>
       </section>
 
       {/* Updated Donation Section */}
-      <section id="donation" className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600">
+      <section id="donation" className="py-20 bg-linear-to-br from-emerald-600 to-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Support Our Mission</h2>
@@ -382,7 +438,7 @@ const HomePage = () => {
               <h3 className="text-2xl font-bold text-white mb-6 text-center">Your Impact</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center shrink-0">
                     <span className="text-emerald-700 font-bold">$25</span>
                   </div>
                   <div className="text-white">
@@ -391,7 +447,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center shrink-0">
                     <span className="text-emerald-700 font-bold">$50</span>
                   </div>
                   <div className="text-white">
@@ -400,7 +456,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center shrink-0">
                     <span className="text-emerald-700 font-bold">$100</span>
                   </div>
                   <div className="text-white">
@@ -409,7 +465,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center shrink-0">
                     <span className="text-emerald-700 font-bold">$250</span>
                   </div>
                   <div className="text-white">
