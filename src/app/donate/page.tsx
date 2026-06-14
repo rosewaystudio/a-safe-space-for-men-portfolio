@@ -1,7 +1,26 @@
+import type { Metadata } from 'next';
 import DonationForm from '@/components/forms/DonationForm';
 import Link from 'next/link';
-import { ArrowLeft, CreditCard, Shield } from 'lucide-react';
+import { ArrowLeft, Shield } from 'lucide-react';
 import { Suspense } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Donate',
+  description: 'Support men\'s mental health in Detroit. Your tax-deductible donation funds free support groups, mental health resources, and community programs for men.',
+  keywords: ['donate', 'men\'s mental health', 'Detroit nonprofit', 'tax deductible', '501c3', 'support groups'],
+  openGraph: {
+    title: 'Support Our Mission - A Safe Space For Men',
+    description: 'Your donation funds free support groups and mental health resources for men in Detroit. Secure payment via Stripe.',
+    images: [
+      {
+        url: '/images/bts_banner.jpeg',
+        width: 1536,
+        height: 698,
+        alt: 'Support men\'s mental health in Detroit',
+      },
+    ],
+  },
+};
 
 export default function DonatePage() {
   return (
@@ -38,7 +57,6 @@ export default function DonatePage() {
         }>
           <DonationForm />
         </Suspense>
-        
 
         {/* Payment Methods */}
         <div className="mt-8 bg-white rounded-lg p-6 shadow-sm border border-gray-200">
@@ -85,7 +103,7 @@ export default function DonatePage() {
             </a>
           </p>
           <p className="text-xs text-gray-400">
-            A Safe Space For Men is a 501(c)(3) organization (EIN: pending).<br />
+            A Safe Space For Men is a registered 501(c)(3) organization (EIN: 33-2483415).<br />
             Your donation is tax-deductible to the extent allowed by law.
           </p>
         </div>
