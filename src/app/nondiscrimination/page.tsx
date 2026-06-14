@@ -4,8 +4,25 @@ import Link from 'next/link';
 import { Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Nondiscrimination Policy | A Safe Space For Men',
-  description: 'A Safe Space For Men is committed to providing programs and services free from discrimination of any kind.',
+  title: 'Nondiscrimination Policy',
+  description: 'A Safe Space For Men is committed to providing programs and services free from discrimination of any kind, in accordance with applicable federal, state, and local law.',
+  keywords: ['nondiscrimination policy', 'equal access', 'ADA compliance', 'civil rights', 'nonprofit policy'],
+  openGraph: {
+    title: 'Nondiscrimination Policy | A Safe Space For Men',
+    description: 'A Safe Space For Men is committed to providing programs and services free from discrimination of any kind.',
+    images: [
+      {
+        url: '/images/bts_banner.jpeg',
+        width: 1536,
+        height: 698,
+        alt: 'A Safe Space For Men - Committed to equal access and nondiscrimination',
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: false,
+  },
 };
 
 const NondiscriminationPage = () => {

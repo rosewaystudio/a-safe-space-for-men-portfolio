@@ -12,7 +12,37 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'A Safe Space For Men - Men\'s Mental Health & Community Support in Detroit',
     description: 'Community-based mental health support for men in Detroit. Free support groups, resources, and connections for men dealing with stress, anxiety, depression, and life\'s challenges.',
-    keywords: ['men\'s mental health', 'Detroit', 'support groups', 'mental health resources', 'men\'s wellness', 'therapy', 'community support'],
+    keywords: [
+      'men\'s mental health Detroit',
+      'free support groups Detroit',
+      'men\'s mental health community',
+      'Detroit mental health resources',
+      'men dealing with depression',
+      'men dealing with anxiety',
+      'mental health support groups',
+      'Black men mental health Detroit',
+      'men\'s wellness community',
+      'suicide prevention Detroit'
+    ],
+    openGraph: {
+      title: 'A Safe Space For Men - You Don\'t Have to Carry Everything Alone',
+      description: 'Community-based mental health support for men in Detroit. Free support groups, resources, and connections. No judgment. Just support.',
+      url: 'https://asafespaceformen.org',
+      images: [
+        {
+          url: '/images/bts_banner.jpeg',
+          width: 1536,
+          height: 698,
+          alt: 'A Safe Space For Men - Community mental health support in Detroit',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'A Safe Space For Men - Men\'s Mental Health Support in Detroit',
+      description: 'Free support groups, resources, and community for men in Detroit. No judgment. Just support.',
+      images: ['/images/bts_banner.jpeg'],
+    },
   };
 }
 
