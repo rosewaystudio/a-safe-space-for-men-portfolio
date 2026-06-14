@@ -52,9 +52,8 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: '<meta name="google-site-verification" content="03svPl1ktx8ZGY35rq0rbhagndpKt0ady5cGGA74GcU" />',
-  },
-};
+    google: '03svPl1ktx8ZGY35rq0rbhagndpKt0ady5cGGA74GcU' },
+  }
 
 export default function RootLayout({
   children,
