@@ -5,7 +5,6 @@ import "./globals.css";
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -52,8 +51,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: '03svPl1ktx8ZGY35rq0rbhagndpKt0ady5cGGA74GcU' },
-  }
+    google: '03svPl1ktx8ZGY35rq0rbhagndpKt0ady5cGGA74GcU',
+  },
+};
 
 export default function RootLayout({
   children,
@@ -68,6 +68,38 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "NonprofitOrganization",
+              "name": "A Safe Space For Men",
+              "url": "https://asafespaceformen.org",
+              "logo": "https://asafespaceformen.org/images/handshake_wordcloud.png",
+              "description": "Community-based mental health support for men in Detroit. Free support groups, resources, and connections for men dealing with stress, anxiety, depression, and life's challenges.",
+              "email": "william@asafespaceformen.org",
+              "telephone": "+13139005214",
+              "areaServed": {
+                "@type": "City",
+                "name": "Detroit",
+                "sameAs": "https://www.wikidata.org/wiki/Q12439"
+              },
+              "knowsAbout": [
+                "Men's Mental Health",
+                "Suicide Prevention",
+                "Community Support Groups",
+                "Mental Health Resources"
+              ],
+              "sameAs": [],
+              "nonprofit501Status": "501c3",
+              "foundingLocation": {
+                "@type": "Place",
+                "name": "Detroit, Michigan"
+              }
+            })
+          }}
+        />
       </head>
       <body className={inter.className}>
         <Header />
