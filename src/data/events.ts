@@ -3,17 +3,17 @@ import { Event } from '@/types/events';
 export const events: Event[] = [
   {
     id: 1,
-    title: "Real Men Real Talk - Detroit",
-    description: "Stress Less, Live More",
-    date: "2026-04-16", 
-    time: "6:00 PM - 8:00 PM",
-    location: "SafetyZone Behavioral Health Urgent Care",
+    title: "Black Men's Wellness Day - Detroit",
+    description: "Get Checked Out, Not Checked In!",
+    date: "2026-07-18", 
+    time: "7:00 AM - 12:00 PM",
+    location: "Renaissance High School - 6565 W Outer Dr, Detroit, MI 48235",
     locationType: "in-person",
-    category: "support-group",
+    category: "community",
     cost: "Free",
-    tags: ["Support", "Mental Health", "Community"],
-    recurring: true,
-    registrationLink: "https://mail.google.com/mail/?view=cm&fs=1&to=william@asafespaceformen.org&su=Monthly Men's Discussion Group Registration"
+    tags: ["Support", "Health", "Community"],
+    recurring: false,
+    registrationLink: "https://www.eventbrite.com/e/2026-black-mens-wellness-day-detroit-tickets-1944162535479"
   },
   // {
   //   id: 2,
